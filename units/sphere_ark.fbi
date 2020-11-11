@@ -1,0 +1,102 @@
+[UNITINFO]
+	{
+	// ------------------- description
+	Side=Sphere;
+	Name=Ark;
+	Description=Amphibious Armored Rocket Robot;
+	icontype=amphibheavyfs;
+
+	// ------------------- categories
+	Category=SPHERE KBOT LEVEL2 WEAPON NOTAIR NOTSUB;
+	TEDClass=KBOT;
+
+	// ------------------- external specs
+	UnitName=sphere_ark;
+	UnitNumber=10016;
+	Objectname=sphere_ark.3do;
+	buildpic=sphere_ark.png;
+	SoundCategory=SPHERE_BOTBIG;
+	Corpse=sphere_ark_dead;
+
+
+	// ------------------- health/cost/size
+	FootprintX=3;
+	FootprintZ=3;
+	MaxDamage=4500;
+
+
+	// ------------------- resources
+	EnergyUse=0;
+	EnergyStorage=0;
+	MetalStorage=0;
+	EnergyMake=0;
+
+	// ------------------- abilities
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+	canguard=1;
+	canattack=1;
+	Builder=0;
+
+	// ------------------- movement
+	MaxWaterDepth=12;
+	MaxSlope=17;
+	MaxVelocity=0.8;
+	BrakeRate=0.35;
+	Acceleration=0.15;
+	TurnRate=950;
+	SteeringMode=2;
+	MovementClass=KBOTUW3;
+
+	// ------------------- scout
+	sightdistance=500;
+	RadarDistance=0;
+	SonarDistance=250;
+
+	// ------------------- weapons
+	Weapon1=sphere_ark_missile;
+	badtargetcategory1=VTOL;
+	NoChaseCategory=VTOL;
+	ExplodeAs=BIG_UNITEX;
+	SelfDestructAs=BIG_UNIT;
+
+
+	// ------------------- orders
+	firestandorders=1;
+	StandingFireOrder=2;
+	mobilestandorders=1;
+	StandingMoveOrder=1;
+
+	// ------------------- misc
+	Version=3.1;
+	Designation=CA_Ik;
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	NoAutoFire=0;
+	ShootMe=1;
+	DefaultMissionType=Standby;
+	maneuverleashlength=640;
+	Upright=0;
+	Downloadable=1;
+	pieceTrailCEGTag=Debree;
+	pieceTrailCEGRange = 4;
+	collisionVolumeType = box;
+	collisionVolumeScales =35 45 35;
+	collisionVolumeOffsets = 0 0 0;
+	collisionVolumeTest = 1;
+	[CustomParams]
+	{
+		builtBy=sphere_adv_kbot_factory;
+	}
+	[SFXTypes]
+	{
+		explosiongenerator0=custom:yellowflaresml;
+	}
+
+	buildcostenergy=8218;//#AUTO#
+	buildcostmetal=1643;//#AUTO#
+	buildtime=19587;//#AUTO#
+	mass=2676;//#AUTO#
+}

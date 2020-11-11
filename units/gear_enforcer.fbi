@@ -1,0 +1,140 @@
+[UNITINFO]
+{
+	//************************************************************
+	//  Unit Description
+	//********************
+	Side=Gear;
+	name=Enforcer;
+	description=Destroyer;
+	icontype=shipartilleryfs;
+
+	//************************************************************
+	//  Categories
+	//**************
+	category=GEAR SHIP LEVEL1 WEAPON NOTAIR NOTSUB;
+	tedclass=SHIP;
+
+	//************************************************************
+	//  External Specs
+	//******************
+	unitname=gear_enforcer;
+	unitnumber=131;
+	objectname=gear_enforcer.3do;
+	corpse=gear_enforcer_dead;
+	buildpic=gear_enforcer.png;
+	soundcategory=gear_SHIP;
+
+	//************************************************************
+	//  Health/Cost/Size
+	//********************
+	maxdamage=2800;
+	healtime=30;
+	footprintx=4;
+	footprintz=4;
+
+	//************************************************************
+	//  Resources
+	//*************
+	metalstorage=0;
+	energymake=0.0;
+	energyuse=0.0;
+	energystorage=0;
+	windgenerator=0.001;
+
+	//************************************************************
+	//  Building
+	//************
+	buildangle=16384;
+	activatewhenbuilt=1;
+
+	//************************************************************
+	//  Constructor
+	//***************
+	builder=0;
+	workertime=0;
+
+	//************************************************************
+	//  Abilities
+	//*************
+	canattack=1;
+	canguard=1;
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+	floater=1;
+
+	//************************************************************
+	//  Movement
+	//************
+	movementclass=smallboat;
+	turnrate=384;
+	acceleration=0.027;
+	brakerate=0.009;
+	maxvelocity=2.3;
+	minwaterdepth=12;
+	waterline=1;
+
+	//************************************************************
+	//  Sight/Radar/Sonar
+	//*********************
+	sightdistance=500;
+	radardistance=0;
+	sonardistance=500;
+
+	//************************************************************
+	//  Weapons
+	//***********
+	weapon1=gear_enforcer_cannon;
+	weapon2=ARMDEPTHCHARGE;
+	nochasecategory=VTOL;
+	badtargetcategory1=VTOL;
+	onlytargetcategory2=NOTAIR;
+	explodeas=SMALL_UNITEX;
+	selfdestructas=SMALL_UNIT;
+
+	//************************************************************
+	//  Orders
+	//**********
+	noautofire=0;
+	firestandorders=1;
+	mobilestandorders=1;
+	standingfireorder=2;
+	standingmoveorder=1;
+	defaultmissiontype=Standby;
+
+	//************************************************************
+	//  Miscellaneous
+	//*****************
+	bmcode=1;
+	designation=SA-AS4;
+	downloadable=1;
+	maneuverleashlength=640;
+	scale=0.6;
+	shootme=1;
+	steeringmode=1;
+	threed=1;
+	version=1.2;
+	zbuffer=1;
+	collisionVolumeType = box;
+	collisionVolumeScales =30 40 60;
+	collisionVolumeOffsets = 0 -10 0;
+	collisionVolumeTest = 1;
+	pieceTrailCEGTag=Debree;
+	pieceTrailCEGRange = 4;
+
+	[CustomParams]
+	{
+		builtBy=gear_shipyard,gear_adv_shipyard;
+		evalfactor=0.85;//SHIP
+	}
+
+	[SFXTypes]
+	{
+	explosiongenerator0=custom:yellowflaremed;
+	explosiongenerator1=custom:UNITFIRE;
+	}
+	buildcostenergy=5758;//#AUTO#
+	buildcostmetal=1151;//#AUTO#
+	buildtime=13724;//#AUTO#
+	mass=1083;//#AUTO#
+}

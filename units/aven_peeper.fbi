@@ -1,0 +1,140 @@
+[UNITINFO]
+{
+	//************************************************************
+	//  Unit Description
+	//********************
+	Side=Aven;
+	name=Peeper;
+	description=Air Scout;
+	icontype=air;
+
+	//************************************************************
+	//  Categories
+	//**************
+	category=AVEN VTOL LEVEL1 NOTSUB;
+	tedclass=VTOL;
+
+	//************************************************************
+	//  External Specs
+	//******************
+	unitname=aven_peeper;
+	unitnumber=52;
+	objectname=aven_peeper.3do;
+	buildpic=aven_peeper.png;
+	soundcategory=aven_VTOL;
+
+	//************************************************************
+	//  Health/Cost/Size
+	//********************
+	maxdamage=110;
+	healtime=30;
+	footprintx=2;
+	footprintz=2;
+
+	//************************************************************
+	//  Resources
+	//*************
+	metalstorage=0;
+	energymake=0.0;
+	energyuse=0.0;
+	energystorage=0;
+
+	//************************************************************
+	//  Building
+	//************
+
+	//************************************************************
+	//  Constructor
+	//***************
+	builder=0;
+	workertime=0;
+
+	//************************************************************
+	//  Abilities
+	//*************
+	canfly=1;
+	canguard=1;
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+	stealth=0;
+
+	//************************************************************
+	//  Movement
+	//************
+	turnrate=800;
+	acceleration=0.5;
+	brakerate=0.09;
+	maxvelocity=8;
+	maxslope=10;
+	
+	cruisealt=180;
+
+	// flight behaviour
+	wingdrag=0.07;      //0.07
+	wingangle=0.08;	//0.08;
+	drag=0.08;		//0.08
+	fronttospeed=0.2;  //0.1
+	speedtofront=0.14; //0.07
+	mygravity=0.4; //0.4
+	maxbank=0.8;	//0.8
+	maxpitch=0.45;	//0.45
+	turnradius=350; //350
+	maxaileron=0.02;	//0.01
+	maxelevator=0.02;	//0.01
+	maxrudder=0.02;  //0.01
+	maxAcc=1.20; //0.065
+
+	//************************************************************
+	//  Sight/Radar/Sonar
+	//*********************
+	sightdistance=600;
+
+	//************************************************************
+	//  Weapons
+	//***********
+	explodeas=SMALL_UNITEX;
+	selfdestructas=SMALL_UNIT;
+
+	//************************************************************
+	//  Orders
+	//**********
+	noautofire=0;
+	mobilestandorders=1;
+	standingmoveorder=1;
+	defaultmissiontype=VTOL_standby;
+
+	//************************************************************
+	//  Miscellaneous
+	//*****************
+	bankscale=1;
+	bmcode=1;
+	designation=AFD-S1;
+	downloadable=1;
+	maneuverleashlength=1280;
+	shootme=1;
+	steeringmode=1;
+	threed=1;
+	version=1.2;
+	zbuffer=1;
+	collide=1;
+	minCollisionSpeed=30;
+	collisionVolumeType = box;
+	collisionVolumeScales =20 10 20;
+	collisionVolumeOffsets = 0 0 0;
+	collisionVolumeTest = 1;
+	pieceTrailCEGTag=Debree;
+	pieceTrailCEGRange = 4;
+   
+	[CustomParams]
+	{
+		builtBy=aven_scout_pad,aven_aircraft_plant,aven_adv_aircraft_plant;
+		evalfactor=0.8;
+	}
+
+
+	buildcostenergy=376;//#AUTO#
+	buildcostmetal=75;//#AUTO#
+	buildtime=897;//#AUTO#
+	mass=26;//#AUTO#
+}

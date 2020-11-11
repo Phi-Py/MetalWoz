@@ -1,0 +1,155 @@
+[UNITINFO]
+{
+	//************************************************************
+	//  Unit Description
+	//********************
+	Side=Aven;
+	name=Ghost;
+	description=Stealth Bomber;
+	icontype=airbomber;
+
+	//************************************************************
+	//  Categories
+	//**************
+	category=AVEN VTOL LEVEL2 WEAPON BOMB NOTSUB  ;
+	tedclass=VTOL;
+
+	//************************************************************
+	//  External Specs
+	//******************
+	unitname=aven_ghost;
+	objectname=aven_ghost.3do;
+	buildpic=aven_ghost.png;
+	soundcategory=aven_VTOL;
+
+	//************************************************************
+	//  Health/Cost/Size
+	//********************
+	maxdamage=2500;
+	healtime=30;
+	footprintx=5;
+	footprintz=5;
+
+	//************************************************************
+	//  Resources
+	//*************
+	metalstorage=0;
+	energymake=0;
+	energyuse=50;
+	energystorage=0;
+
+	//************************************************************
+	//  Building
+	//************
+
+	//************************************************************
+	//  Constructor
+	//***************
+	builder=0;
+	workertime=0;
+
+	//************************************************************
+	//  Abilities
+	//*************
+	canattack=1;
+	candropflare=0;
+	canfly=1;
+	canguard=1;
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+
+	//************************************************************
+	//  Movement
+	//************
+	turnrate=365;
+	acceleration=0.2;
+	brakerate=0.1;
+	maxvelocity=5.0;
+	maxslope=10;
+	maxwaterdepth=2;
+	cruisealt=250;
+	hoverattack=1;
+	upright=1;
+
+	// flight behaviour
+	wingdrag=0.07;      //0.07
+	wingangle=0.08;	//0.08;
+	drag=0.08;		//0.08
+	fronttospeed=0.1;  //0.1
+	speedtofront=0.07; //0.07
+	mygravity=0.4; //0.4
+	maxbank=0.8;	//0.8
+	maxpitch=0.45;	//0.45
+	turnradius=350; //500
+	maxaileron=0.01;	//0.015
+	maxelevator=0.01;	//0.01
+	maxrudder=0.01;  //0.004
+	maxAcc=0.365; //0.065
+
+
+	//************************************************************
+	//  Sight/Radar/Sonar
+	//*********************
+	sightdistance=600;
+	radardistance=0;
+	radardistancejam=600;
+
+	// stealth
+	cloakcost=150;
+	cloakcostmoving=300;
+	mincloakdistance=250;
+
+
+	//************************************************************
+	//  Weapons
+	//***********
+	weapon1=aven_ghost_bomb;
+	nochasecategory=UNDERWATER;
+	onlytargetcategory1=NOTAIR;
+	explodeas=HBOMBER;
+	selfdestructas=HBOMBER;
+
+	//************************************************************
+	//  Orders
+	//**********
+	noautofire=0;
+
+
+	//************************************************************
+	//  Miscellaneous
+	//*****************
+	attackrunlength=225;
+	bankingallowed=0;
+	bmcode=1;
+	scale=1;
+	shootme=1;
+	steeringmode=1;
+	threed=1;
+	version=1.2;
+	zbuffer=1;
+	pieceTrailCEGTag=Debree;
+	pieceTrailCEGRange = 4;
+
+	collide=1;
+	minCollisionSpeed=30;
+	collisionVolumeType = box;
+	collisionVolumeScales =70 15 40;
+	collisionVolumeOffsets = 0 0 0;
+	collisionVolumeTest = 1;
+
+	[CustomParams]
+	{
+		builtBy=aven_adv_aircraft_plant;
+		tip=Becomes fully invisible when ON and cloaked;
+	}
+
+	[SFXTypes]
+	{
+	
+	}
+	buildcostenergy=17937;//#AUTO#
+	buildcostmetal=3587;//#AUTO#
+	buildtime=42750;//#AUTO#
+	mass=910;//#AUTO#
+}

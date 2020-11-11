@@ -1,0 +1,119 @@
+[UNITINFO]
+{
+	//************************************************************
+	//  Unit Description
+	//********************
+	side=Gear;
+	name=Noser;
+	description=Heavy Attack Submarine;
+	icontype=subartilleryfs;
+
+	//************************************************************
+	//  Categories
+	//**************
+	category=GEAR UNDERWATER LEVEL2 WEAPON NOTAIR;
+	tedclass=SHIP;
+
+	//************************************************************
+	//  External Specs
+	//******************
+	unitname=gear_noser;
+	unitnumber=134;
+	objectname=gear_noser.3do;
+	corpse=gear_noser_dead;
+	buildpic=gear_noser.png;
+	soundcategory=gear_SUB;
+
+	//************************************************************
+	//  Health/Cost/Size
+	//********************
+	maxdamage=1850;
+	healtime=10;
+	footprintx=4;
+	footprintz=4;
+
+	//************************************************************
+	//  Resources
+	//*************
+	metalstorage=0;
+	energymake=0.0;
+	energyuse=0.0;
+	energystorage=0;
+
+	//************************************************************
+	//  Building
+	//************
+	activatewhenbuilt=1;
+
+	//************************************************************
+	//  Constructor
+	//***************
+	builder=0;
+	workertime=0;
+
+	//************************************************************
+	//  Abilities
+	//*************
+	canattack=1;
+	canguard=1;
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+	floater=1;
+	upright=1;
+
+	//************************************************************
+	//  Movement
+	//************
+	movementclass=BOATSUB5;
+	turnrate=353;
+	acceleration=0.08;
+	brakerate=0.1;
+	maxvelocity=1.6;
+	maxreversevelocity=0.8;
+	minwaterdepth=15;
+
+	//************************************************************
+	//  Sight/Radar/Sonar
+	//*********************
+	sightdistance=500;
+	sonardistance=500;
+
+	//************************************************************
+	//  Weapons
+	//***********
+	weapon1=gear_noser_torpedo;
+	onlytargetcategory1=NOTAIR;
+	badtargetcategory1=NOTSUB;
+	explodeas=SMALL_UNITEX;
+	selfdestructas=SMALL_UNIT;
+   	WeaponMainDir1=0 0 1;
+   	MaxAngleDif1=120;
+
+	//************************************************************
+	//  Orders
+	//**********
+	noautofire=0;
+
+
+	//************************************************************
+	//  Miscellaneous
+	//*****************
+	waterline=50;
+	collisionVolumeType = box;
+	collisionVolumeScales =35 18 49;
+	collisionVolumeOffsets = 0 0 0;
+	collisionVolumeTest = 1;
+	pieceTrailCEGTag=Debree;
+	pieceTrailCEGRange = 4;
+
+	[CustomParams]
+	{
+		builtBy=gear_adv_shipyard;
+	}
+
+	buildcostenergy=9259;//#AUTO#
+	buildcostmetal=1851;//#AUTO#
+	buildtime=22068;//#AUTO#
+	mass=1079;//#AUTO#
+}

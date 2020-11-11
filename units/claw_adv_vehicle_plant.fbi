@@ -1,0 +1,89 @@
+[UNITINFO]
+	{
+
+	// ------------------- description
+	Side=Claw;
+	Name=Advanced Vehicle Plant;
+	Description=Builds Level 2 Vehicles;
+	icontype=plant2;
+
+	// ------------------- categories
+	Category=CLAW PLANT LEVEL2 NOTAIR NOTSUB;
+	TEDClass=PLANT;
+
+	// ------------------- external specs
+	UnitName=claw_adv_vehicle_plant;
+	UnitNumber=10021;
+	Objectname=claw_adv_vehicle_plant.3do;
+	buildpic=claw_adv_vehicle_plant.png;
+	SoundCategory=gear_HOVER_PLANT;
+	Corpse=claw_adv_vehicle_plant_dead;
+
+	// ------------------- health/cost/size
+	MaxDamage=4500;
+	FootprintX=9;
+	FootprintZ=8;
+	idleautoheal=5;
+
+
+	// ------------------- resources
+	EnergyStorage=100;
+	MetalStorage=100;
+	EnergyUse=0;
+
+
+	// ------------------- constructor
+	Builder=1;
+	WorkerTime=300;
+
+
+
+	// ------------------- abilities
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+	
+	// ------------------- movement
+	buildangle=1024;
+	YardMap=oocccccoo oocccccoo oocccccoo oocccccoo oocccccoo oocccccoo oocccccoo oocccccoo; 
+	MaxWaterDepth=0;
+	MaxSlope=14;
+	collisionVolumeType = box;
+	collisionVolumeScales =140 55 110;
+	collisionVolumeOffsets=0 -5 0;
+	collisionVolumeTest = 1;
+
+	// ------------------- scout
+	sightdistance=500;
+	RadarDistance=0;
+
+	// ------------------- weapons
+	ExplodeAs=LARGE_BUILDINGEX;
+	SelfDestructAs=LARGE_BUILDING;
+
+	// ------------------- orders
+	firestandorders=1;
+	StandingFireOrder=2;
+	mobilestandorders=1;
+	StandingMoveOrder=1;
+
+
+	// ------------------- misc
+	Version=3.1;
+	Designation=CA-lFCT;
+	NoAutoFire=0;
+
+	[CustomParams]
+	{
+		builtBy=claw_l1builder,claw_l2builder;
+	}
+	[SFXTypes]
+	{
+		explosiongenerator0=custom:Nano;
+	}
+
+	buildcostenergy=8537;//#AUTO#
+	buildcostmetal=1707;//#AUTO#
+	buildtime=20346;//#AUTO#
+	mass=3388;//#AUTO#
+}

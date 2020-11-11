@@ -1,0 +1,126 @@
+[UNITINFO]
+{
+	//************************************************************
+	//  Unit Description
+	//********************
+	side=Sphere;
+	name=Pluto;
+	description=Armored Assault Sub;
+	icontype=subassault;
+
+	//************************************************************
+	//  Categories
+	//**************
+	category=SPHERE UNDERWATER LEVEL2 WEAPON NOTAIR ;
+	tedclass=SHIP;
+
+	//************************************************************
+	//  External Specs
+	//******************
+	unitname=sphere_pluto;
+	unitnumber=10000;
+	objectname=sphere_pluto.3do;
+	corpse=sphere_pluto_dead;
+	buildpic=sphere_pluto.png;
+	soundcategory=gear_SUB;
+
+	//************************************************************
+	//  Health/Cost/Size
+	//********************
+	maxdamage=5000;
+	healtime=10;
+	footprintx=5;
+	footprintz=5;
+
+	//************************************************************
+	//  Resources
+	//*************
+	metalstorage=0;
+	energymake=0;
+	energyuse=0;
+	energystorage=0;
+
+	//************************************************************
+	//  Building
+	//************
+	activatewhenbuilt=1;
+
+	//************************************************************
+	//  Constructor
+	//***************
+	builder=0;
+	workertime=0;
+
+	//************************************************************
+	//  Abilities
+	//*************
+	canattack=1;
+	canguard=1;
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+	floater=1;
+	upright=1;
+
+	//************************************************************
+	//  Movement
+	//************
+	movementclass=BOATSUB5;
+	turnrate=270;
+	acceleration=0.07;
+	brakerate=0.01;
+	maxvelocity=1.4;
+	maxreversevelocity=0.7;
+	minwaterdepth=40;
+
+	//************************************************************
+	//  Sight/Radar/Sonar
+	//*********************
+	sightdistance=500;
+	sonardistance=500;
+
+	//************************************************************
+	//  Weapons
+	//***********
+	weapon1=sphere_pluto_torpedo;
+	nochasecategory=VTOL;
+	onlytargetcategory1=NOTAIR;
+	explodeas=BIG_UNITEX;
+	selfdestructas=BIG_UNIT;
+   	WeaponMainDir1=0 0 1;
+   	MaxAngleDif1=120;
+
+	//************************************************************
+	//  Orders
+	//**********
+	noautofire=0;
+	firestandorders=1;
+	mobilestandorders=1;
+	standingfireorder=1;
+	standingmoveorder=1;
+	defaultmissiontype=Standby;
+
+	//************************************************************
+	//  Miscellaneous
+	//*****************
+	waterline=60;
+	collisionVolumeType = box;
+	collisionVolumeScales =45 38 65;
+	collisionVolumeOffsets = 0 0 0;
+	collisionVolumeTest = 1;
+	pieceTrailCEGTag=Debree;
+	pieceTrailCEGRange = 4;
+
+	[CustomParams]
+	{
+		builtBy=sphere_adv_shipyard;
+	}
+	[SFXTypes]
+	{
+		explosiongenerator0=custom:ROCKETFLAREMED;
+	}
+	buildcostenergy=7950;//#AUTO#
+	buildcostmetal=1590;//#AUTO#
+	buildtime=18948;//#AUTO#
+	mass=2848;//#AUTO#
+}

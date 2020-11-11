@@ -1,0 +1,107 @@
+[UNITINFO]
+{
+	//************************************************************
+	//  Unit Description
+	//********************
+	Side=Gear;
+	name=Advanced Metal Extractor;
+	description=Extraction rate x2.5, drains 60 E/s;
+	icontype=metal;
+
+	//************************************************************
+	//  Categories
+	//**************
+	category=GEAR METAL LEVEL3 NOTAIR NOTSUB;
+	tedclass=METAL;
+
+	//************************************************************
+	//  External Specs
+	//******************
+	unitname=gear_moho_mine;
+	unitnumber=120;
+	objectname=gear_moho_mine.3do;
+	corpse=gear_moho_mine_dead;
+	buildpic=gear_moho_mine.png;
+	soundcategory=gear_MOHO;
+
+	//************************************************************
+	//  Health/Cost/Size
+	//********************
+	maxdamage=3000;
+	footprintx=5;
+	footprintz=5;
+
+	//************************************************************
+	//  Resources
+	//*************
+	metalstorage=0;
+	energyuse=60;
+	energystorage=0;
+	extractsmetal=0.0025;
+
+	//************************************************************
+	//  Building
+	//************
+	buildangle=2048;
+	yardmap=yoooy ooooo ooooo ooooo yoooy;
+	activatewhenbuilt=1;
+
+	//************************************************************
+	//  Constructor
+	//***************
+	builder=0;
+	workertime=0;
+
+	//************************************************************
+	//  Abilities
+	//*************
+	onoffable=1;
+
+	//************************************************************
+	//  Movement
+	//************
+	maxslope=15;
+
+	//************************************************************
+	//  Sight/Radar/Sonar
+	//*********************
+	sightdistance=500;
+	radardistance=0;
+
+	//************************************************************
+	//  Weapons
+	//***********
+	explodeas=MEDIUM_BUILDINGEX;
+	selfdestructas=MEDIUM_BUILDING;
+
+	//************************************************************
+	//  Orders
+	//**********
+	noautofire=0;
+
+	//************************************************************
+	//  Miscellaneous
+	//*****************
+	bmcode=0;
+	designation=MD-2;
+	downloadable=1;
+	threed=1;
+	version=1.2;
+	zbuffer=1;
+	pieceTrailCEGTag=Debree;
+	pieceTrailCEGRange = 4;
+	collisionVolumeType = cyly;
+	collisionVolumeScales =80 55 80;
+	collisionVolumeOffsets = 0 0 0;
+	collisionVolumeTest = 1;
+	
+	[CustomParams]
+	{
+		builtBy=gear_l2builder;
+	}
+
+	buildcostenergy=6995;//#AUTO#
+	buildcostmetal=1399;//#AUTO#
+	buildtime=16671;//#AUTO#
+	mass=2432;//#AUTO#
+}

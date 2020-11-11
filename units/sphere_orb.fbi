@@ -1,0 +1,111 @@
+[UNITINFO]
+{
+	// ------------------- description
+	Side=Sphere;
+	Name=Orb;
+	Description=Intelligence Sphere;
+	icontype=mobileintel;
+
+	// ------------------- categories
+	Category=SPHERE LEVEL2 WEAPON NOTAIR NOTSUB;
+	TEDClass=COMMANDER;
+
+
+	// ------------------- external specs
+	UnitName=sphere_orb;
+	UnitNumber=10000;
+	Objectname=sphere_orb.3do;
+	Corpse=sphere_orb_dead;
+	buildpic=sphere_orb.png;
+	SoundCategory=SPHERE_SPHERESML;
+
+	// ------------------- health/cost/size
+	MaxDamage=3000;
+	FootprintX=4;
+	FootprintZ=4;
+	
+	// ------------------- resources
+	EnergyMake=0;
+	MetalMake=0;
+	EnergyStorage=0;
+	MetalStorage=0;
+	EnergyUse=0;
+
+	// ------------------- constructor
+	builder=0;
+
+
+	// ------------------- abilities
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+	canguard=1;
+	canattack=1;
+	onoffable=1;
+
+
+	// ------------------- movement
+	canfly=1;
+	MaxVelocity=1.2;
+	BrakeRate=0.03;
+	Acceleration=0.03;
+	TurnRate=632;
+	SteeringMode=2;
+	cruisealt=100;
+	hoverattack=1;
+	airstrafe=0;
+	airhoverfactor=0.1;
+	upright=1;
+	bankingallowed=0;
+	useSmoothMesh=1;
+	verticalSpeed=1.2;
+
+	// ------------------- scout
+	sightdistance=600;
+	RadarDistance=1600;
+	RadarDistanceJam=650;
+	SonarDistance=1200;
+
+	// ------------------- weapons
+	NoChaseCategory=VTOL;
+	ExplodeAs=big_unit;
+	SelfDestructAs=big_unit;
+
+	// ------------------- orders
+	firestandorders=1;
+	mobilestandorders=1;
+	StandingFireOrder=2;
+	StandingMoveOrder=0;
+	DefaultMissionType=Standby;
+
+	// ------------------- stealth
+	//cloakcost=200;
+	//cloakcostmoving=750;
+	//mincloakdistance=170;
+
+	// ------------------- misc
+	Designation=orb;
+	BMcode=1;
+	ThreeD=1;
+	ZBuffer=1;
+	ShootMe=1;
+	maneuverleashlength=640;
+	Version=1;
+	minAirbasePower=99999;
+	activatewhenbuilt=1;
+	collisionVolumeType = sphere;
+	collisionVolumeScales =60 45 60;
+	collisionVolumeOffsets = 0 0 0;
+	collisionVolumeTest = 1;
+
+	[CustomParams]
+	{
+		builtBy=sphere_sphere_factory;
+		energyCostMoving=50;
+		tip=Requires 50E/s to move;
+	}
+	buildcostenergy=7023;//#AUTO#
+	buildcostmetal=1404;//#AUTO#
+	buildtime=16738;//#AUTO#
+	mass=1218;//#AUTO#
+}

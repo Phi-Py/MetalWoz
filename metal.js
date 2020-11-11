@@ -95,7 +95,7 @@ function getWeaponInfo(weapon){
 	}
 	tempWeap = tempWeap.substring(0, tempWeap.indexOf("armor_light"));
 	let returnWeapon = {};
-	returnWeapon.name = getFBIVal(tempWeap, "name");
+	returnWeapon.name = getFBIVal(tempWeap, "Name");
 	returnWeapon.range = getFBIVal(tempWeap, "range");
 	returnWeapon.energyPerShot = getFBIVal(tempWeap, "energypershot");
 	returnWeapon.aoe = getFBIVal(tempWeap, "areaofeffect");
@@ -176,6 +176,9 @@ function createUnitEmbed(unit){
 	    	});
     	}
     	let weaponInfo = getWeaponInfo(unit.weapons[i]);
+    	if(weaponInfo.name == "Energy shield"){
+    		continue;
+    	}
     	returnEmbed.embed.fields.push({
     		name: "Weapon " + (i+1) + ": " + weaponInfo.name,
     		value: "Range: " + weaponInfo.range,
